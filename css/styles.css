@@ -1,0 +1,395 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+img,
+li {
+  margin: 0;
+  padding: 0;
+} 
+
+a {
+  text-decoration: none;
+}
+
+/* 
+body {
+  font-family: 'Garamond', serif;
+  background-color: #1c1c1c;
+  color: #4f3a28;
+  line-height: 1.7;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+main {
+  padding:  10px 25px 20px;
+  background-color: #f8f2e4;
+}
+
+header,
+footer {
+  background-color: #1c1c1c;
+  padding: 10px;
+  text-align: center;
+  color: #fff
+}
+
+header h1 {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: 'Serif';
+  font-family: ''
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 5px 2.5px 3.5px rgba(0, 0, 0, 0.2);
+  padding: 10px 5px 7px;
+}
+
+img:hover{
+  box-shadow: 5px 2.5px 3.5px rgba(123, 80, 80, 0.2);
+}
+
+aside:hover {
+  box-shadow: 10px 5px 7px rgba(123, 80, 80, 0.2);
+
+}
+
+
+h2,
+h3,
+h4 {
+  color: #4f3a28;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  padding-top: 3px;
+} 
+
+h2 {
+  border-bottom: 2px solid #8b735b;
+  font-weight: 800; 
+}
+
+h3 {
+  border-bottom: 1px solid #8b735b;
+  font-weight: 600
+}
+
+h4 {
+  font-weight: 400;
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: medium;
+}
+
+aside {
+  flex: 0 0 300px;
+  padding-left: 20px;
+  box-shadow: 10px 5px 7px rgba(0, 0, 0, 0.2);
+  padding: 20px 10px 14px
+}
+
+section {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+aside h2 {
+  color: #4f3a28;
+  font-style: italic;
+}
+
+ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+a {
+  color: #5e6b7e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border: 1px solid #8b735b;
+}
+
+em {
+  font-style: italic;
+  color: #5e6b7e;
+}
+
+strong {
+  font-size: medium;
+  color: #5e6b7e;
+}
+
+th,
+td {
+  border: 1px solid rgb(161, 105, 48);
+  padding: 8px;
+  text-align: left;
+}
+
+th{
+  background-color: #efebe2;
+}
+tr:nth-child(even){
+  background-color: #d8cccc;
+}
+tr:nth-child(odd){
+  background-color: #d3dded;
+}
+
+table:hover{
+  box-shadow: 5px 2.5px 3.5px rgb(222, 163, 104, 0.7);;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "zero zero zero zero"
+    "first second third fourth"
+    "fifth fifth sixth sixth";
+
+  column-gap: 15px;
+  row-gap: 20px;
+}
+
+.life { grid-area: first; } 
+.business { grid-area: second; } 
+.wealth { grid-area: third; } 
+.politics { grid-area: fifth; } 
+.philantropy { grid-area: sixth; } 
+.aside { 
+  grid-area: fourth; 
+  background-color: #efebe2;
+  align-self:  flex-end;
+} 
+.header { grid-area: zero;}
+
+footer {
+  background-color: #292929;
+  color: #fff;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+  text-align: center;
+}
+
+footer h3 {
+  color: #fff;
+}
+
+footer ol li {
+  list-style-type: none;
+  margin-bottom: 5px;
+ https://file+.vscode-resource.vscode-cdn.net/Applications/XAMPP/xamppfiles/htdocs/project3/images/bloomberg.jpeg padding-left: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ccab8a;
+}
+ */
+ 
+
+/* header {
+  background-image: url('your-banner-image.jpg');
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
+  color: white;
+} */
+
+
+/*
+header h1 {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: 'Serif';
+  font-family: ''
+}
+ */
+
+header {
+  display: grid;
+  grid-template-areas: "logo banner";
+  height: min-content;
+  background: linear-gradient(to right, #3498db, #ffffff); 
+}
+
+/* header h1,
+header p {
+  grid-area: banner;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: red;
+  padding-right: 1vw;
+}
+
+header h1 {
+  font-size: 2em;
+  font-size: clamp(1.5rem, 2vw, 5rem); 
+  max-width: 100%;
+  padding-top: 0.5vw
+}
+
+header p {
+  font-size: 1em;
+  font-size: clamp(1rem, 1vw, 3rem);
+  padding: 0vw 0vw inherit 0.5vw;
+  max-width: 100%;
+}
+
+header img {
+  height: 8.5vw;
+} */
+
+
+.logo {
+  grid-area: logo;
+  display: flex;
+  justify-self: self-start;
+  height: 8.5vw;
+}
+
+.banner {
+  grid-area: banner; 
+  display: flex;
+  place-items: right; 
+  align-self: center;
+  padding-right: 1em;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: red;
+  height: auto;
+}
+
+header h1 {
+  font-size: 2em;
+  font-size: clamp(1.5rem, 2vw, 5rem); 
+  max-width: 100%;
+  padding-top: 0.5vw
+}
+
+header p {
+  font-size: 1em;
+  font-size: clamp(1rem, 1vw, 3rem);
+  padding: 0vw 0vw inherit 0.5vw;
+  max-width: 100%;
+}
+
+
+nav {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 20px;
+  display: block;
+}
+
+nav a:hover {
+  background: #2980b9;
+}
+
+li.current a {
+  background: #2980b9;
+}
+
+
+@media (max-width: 480px) {
+  header {
+    display: grid;
+    grid-template-areas: "logo";
+    text-align: left;
+  }
+
+  header h1,
+  header p {
+    display: none; /* hide other header elements */
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .logo{
+    grid-area: logo;
+    flex-grow: 1;
+  }
+
+}
+
+
+@media (min-width: 768px) {
+  header {
+    background-position: center; 
+  }
+}
+
+
+  /* .banner{
+    display: none;
+    grid-area: banner; 
+    place-items: left; 
+    align-self: left;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }  */
+
+
+  /* header h1,
+  header p {
+    grid-template-areas: banner;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    padding-left: 0.2em;
+  } */
